@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5" style="color: rgb(88, 238, 188);">
+        <h1 style="text-align: center;" ><u>Surgery Risk <span style="color: rgb(90, 18, 207);"><u>Calculator</u><span></u></h1>
+    </div>
+    <div class="container mt-5"><h3><strong>Physiological Parameters</strong></h3></div>
+    <div class="container" style="padding-top: 24px;">
+        <div class="row">
+            <div class="row">
+                <div class="col-sm mt-3">
+                    <label for="age">AGE</label>
+                    <select class="form-select" id='age' aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">≤60</option>
+                        <option value="2">61–70</option>
+                        <option value="4">≥71</option>
+                    </select>
+                    
+                </div>
+                <div class="col-sm mt-3">
+                    <label for='Cardiac Signs'>Cardiac signs</label>
+                    <select class="form-select" id='Cardiac Signs' aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">No failure</option>
+                        <option value="2">Diuretic, Digoxin, Anti-anginal or hypertensive therapy</option>
+                        <option value="4">Peripheral oedema, Warfarin therapy, Borderline</option>
+                        <option value="8">Raised JVP</option>
+                    </select>
+                </div>
+                <div class="col-sm mt-3">
+                    <label for="Respiratory history">Respiratory history</label>
+                    <select class="form-select" id="Respiratory history"  aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">No dyspnoea</option>
+                        <option value="2">Dyspnoea on exertion</option>
+                        <option value="4">Limiting dyspnoea</option>
+                        <option value="8">Dyspnoea at rest</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+ <!-- 1st end-->
+
+        <div class="row" style="margin-top: 10px;">
+            <div class="row">
+                <div class="col-sm mt-3">
+                    <label for="ecg">ECG</label>
+                    <select class="form-select" id="ecg" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">Normal </option>
+                        <option value="2">ECG = AF, rate 60-90</option>
+                        <option value="4">ECG = any other abnormal rhythm, >4/min ectopics, Q waves, ST/T changes</option>
+                    </select>
+                    
+                </div>
+                <div class="col-sm mt-3">
+                    <label for="bp">Blood Pressure Systolic (mmHg)</label>
+        
+                        <select class="form-select" id='bp' aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">110–130 </option>
+                            <option value="2">131–170 or 100–109</option>
+                            <option value="3">≥171 or 90–99</option>
+                            <option value="3">≤89</option>
+                        </select>
+                </div>
+                <div class="col-sm mt-3">
+                    <label for="haemoglobin">Haemoglobin (g/100ml)</label>
+                    <select class="form-select" id='haemoglobin' aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">13–16 g/dl </option>
+                        <option value="2">11.5–12.9 or 16.1–17.0 g/dl</option>
+                        <option value="3">10.0–11.4 or 17.1–18.0 g/dl</option>
+                        <option value="3">≤9.9 or ≥18.1 g/dl</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- 2nd row end -->
+
+
+        <div class="row" style="margin-top: 10px;">
+            <div class="row">
+                <div class="col-sm mt-3">
+                    <label for="pulse rate">Pulse Rate</label>
+                    <select class="form-select" id="pulse rate" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">50 – 80 bpm </option>
+                        <option value="2">40 – 49 or 81 – 100 bpm </option>
+                        <option value="3">101- 120 bpm </option>
+                        <option value="3"> <40 or > 120 bpm</option>
+                    </select>
+                    
+                </div>
+                <div class="col-sm mt-3">
+                    <label for="wbc">WBC</label>
+                        <select class="form-select" id="wbc" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">4 – 10 </option>
+                            <option value="2">10.1 – 20 or 3.1 -4</option>
+                            <option value="4">>20 or <3</option>
+                        </select>
+                </div>
+                <div class="col-sm mt-3">
+                    <label for="urea">Urea</label>
+                    <select class="form-select" id="urea" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1"><7.6</option>
+                        <option value="2">7.6 – 10 </option>
+                        <option value="4">10.1 - 15</option>
+                        <option value="8">>15</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+            <!-- 3rd row end -->
+
+            <div class="row" style="margin-top: 10px;">
+                <div class="row">
+                    <div class="col-sm mt-3">
+                        <label for="sodium">Sodium</label>
+                        <select class="form-select" id="sodium" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">>135 mmol/l</option>
+                            <option value="2">131-135 mmol/l</option>
+                            <option value="4">126- 130 mmol/l</option>
+                            <option value="8"><126 mmol/l</option>
+                        </select>
+                        
+                    </div>
+                    <div class="col-sm mt-3">
+                        <label for="potassium">Potassium</label>
+                        <select class="form-select" id="potassium" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1"><7.6</option>
+                            <option value="2">7.6 – 10 </option>
+                            <option value="4">10.1 - 15</option>
+                            <option value="8">>15</option>
+                        </select>
+                    </div>
+                    <div class="col-sm mt-3">
+                        <label for="gcs">GCS</label>
+                        <select class="form-select" id='gcs' aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">15</option>
+                            <option value="2">12-14</option>
+                            <option value="4">9-11</option>
+                            <option value="8"><9</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+
+<!-- operative parameters -->
+
+
+            <div class="container mt-5"><h3><strong>Operative Parameters</strong></h3></div>
+            <div class="container" style="padding-top: 24px;">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-sm mt-3">
+                            <label for="multipleprocidures">Multiple procedures</label>
+                            <select class="form-select" id="multipleprocidures" aria-label="Default select example">
+                                <option selected >Open this select menu</option>
+                                <option value="1">0</option>
+                                <option value="2">1</option>
+                                <option value="4">2</option>
+                                <option value="8">>2</option>
+                              </select>
+                            
+                        </div>
+                        <div class="col-sm mt-3">
+                            <label for="typeofsurgery">Type of surgery </label>
+                            <select class="form-select" id="typeofsurgery" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">Elective</option>
+                                <option value="4">Emergency resuscitation of >2h. possible,Operation< 24h after admission</option>
+                                <option value="8">Emergency * (immediate Surgery <2h. needed)</option>
+                            </select>
+                        </div>
+                        <div class="col-sm mt-3">
+                            <label for="malignancystatus">Malignancy status</label>
+                            <select class="form-select" id ="malignancystatus" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">None</option>
+                                <option value="2">Primary only</option>
+                                <option value="4">Nodalmetastases ( nodal mets)</option>
+                                <option value="8">Distantmetastases ( distant mets) </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+         <!-- 1st end-->
+        
+                <div class="row" style="margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-sm mt-3">
+                            <label for="operativebloodloss">Operative Blood Loss </label>
+                            <select class="form-select" id="operativebloodloss" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1"><100 mls </option>
+                                <option value="2">101 -500 mls</option>
+                                <option value="4">501 – 999 mls</option>
+                                <option value="8">	1000 mls</option>
+                            </select>
+                            
+                        </div>
+                        <div class="col-sm mt-3">
+                            <label for="peritoneal">Peritoneal Contamination</label>
+                
+                                <select class="form-select" id="peritoneal" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">No soiling </option>
+                                    <option value="2">Minor soiling</option>
+                                    <option value="4">Local pus</option>
+                                    <option value="8">Free bowel content, pus or blood </option>
+                                </select>
+                        </div>
+                        <div class="col-sm mt-3">
+                            <label for="operativeseverity">Operative severity</label>
+                            <select class="form-select" id="operativeseverity" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">Minor </option>
+                                <option value="2">Moderate</option>
+                                <option value="4">Major</option>
+                                <option value="8">Major plus</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                <button id ="button" class="btn btn-primary mt-3" type="button" onclick='Calculate()'>Calculate</button>
+                <!-- 2nd row end -->
+            </div>
+                <div class ="row">
+                    <div class="col mt-5">
+                        <label style="font-size: 25px;"  for="MorbidityResult">SurgRisk Morbidity</label>
+                        <p id="MorbidityResult"></p>
+                    </div>
+
+                    <div class="col mt-5">
+                        <label style="font-size: 25px;" for="MorbidityResult">SurgRisk Mortality</label>
+                        <p id="MortalityResult"></p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+<!-- JavaScript Bundle with Popper -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
+<script src="script.js"></script>
+</body>
+</html>
